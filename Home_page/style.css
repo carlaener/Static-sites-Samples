@@ -1,0 +1,119 @@
+/* --- Estilos Globales y Base --- */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-style: fantasy;
+    background-color: #001100;
+    color: #ffffff;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* --- Estilos para Header y Footer --- */
+header,
+footer {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #003300;
+    color: #ffffff;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: #004d00;
+    padding: 1rem;
+}
+
+/* --- Estilos para el Contenido Principal (main) --- */
+main {
+    flex-grow: 1; 
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilo para la Sección Superior --- */
+.seccion-arriba-columnas {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* --- Estilos para el Contenedor de Columnas --- */
+.columnas-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* --- Estilos para cada Columna Individual--- */
+.columna {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 51, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.columna h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* --- Estilos para los Títulos --- */
+h1,
+h2,
+h3 {
+    font-family: "ITC Zapf Chancery", cursive;
+    color: #ccffcc;
+    margin: 0.5em 0;
+}
+
+/* --- Estilos para Párrafos --- */
+p {
+    font-family: Arial, sans-serif;
+    color: #ffff;
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+/* --- Estilos para Imágenes Pequeñas --- */
+.imagen-pequena {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Media Query para Responsividad --- */
+@media (max-width: 768px) {
+    .columnas-container {
+        flex-direction: column;
+        width: 95%;
+    }
+    .columna {
+        margin-bottom: 20px;
+    }
+}
